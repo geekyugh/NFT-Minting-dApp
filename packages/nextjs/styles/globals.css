@@ -1,0 +1,59 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: Enixe;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/enixe.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Yantramanav;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/yantramanav.woff2") format("woff2");
+}
+
+:root,
+[data-theme] {
+  background: oklch(var(--b2));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  font-family: Enixe !important;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.btn {
+  @apply shadow-md;
+}
+
+.btn.btn-ghost {
+  @apply shadow-none;
+}
+
+body {
+  scroll-behavior: smooth !important;
+  max-width: 100vw !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  color: #e0e0e0 !important;
+  font-family: Yantramanav !important;
+  backdrop-filter: grayscale(100%);
+  background-image: url("./images/background.webp") !important;
+  min-height: 100vh !important;
+}
